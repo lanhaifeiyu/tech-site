@@ -3,13 +3,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!--提供相关的Maven默认依赖，使用它之后，常用的包依赖可以省去version标签
-    查看具体version地址：C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-dependencies\2.1.5.RELEASE\spring-boot-dependencies-2.1.5.RELEASE.pom
+    <!--提供相关的Maven默认依赖、plugin使用它之后，常用的包依赖可以省去version标签
+    查看具体version地址：C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-dependencies\Finchley.SR3\spring-cloud-dependencies-Finchley.SR3.pom
+
+     spring-cloud-starter-parent 的parent为spring-boot-starter-parent
+
+    spring-boot-starter-parent包含内容：
+    <properties>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <java.version>1.8</java.version>
+    <resource.delimiter>@</resource.delimiter>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+   </properties>
+    查看具体version地址：C:\Users\Administrator\.m2\repository\org\springframework\boot\spring-boot-starter-parent\2.1.5.RELEASE\spring-boot-starter-parent-2.1.5.RELEASE.pom
+
     -->
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-parent</artifactId>
+        <version>Finchley.SR3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lhfeiyu</groupId>
@@ -25,9 +39,6 @@
     </modules>
 
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
 <!--    <dependencies>
 
