@@ -36,6 +36,7 @@
     <modules>
         <module>api</module>
         <module>business</module>
+        <module>generator</module>
     </modules>
 
 
