@@ -23,22 +23,22 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.lhfeiyu.business.model" targetProject="\business\src">
+        <javaModelGenerator targetPackage="com.lhfeiyu.business.model" targetProject="business\src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.lhfeiyu.business.mappers"  targetProject="\business\src">
+        <sqlMapGenerator targetPackage="com.lhfeiyu.business.mappers"  targetProject="business\src\main\resources">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.lhfeiyu.business.mappers"  targetProject="\business\src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.lhfeiyu.business.mappers"  targetProject="business\src\main\java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
         <table schema="" tableName="category" domainObjectName="Category" >
-            <property name="useActualColumnNames" value="true"/>
-            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+            <!--<property name="useActualColumnNames" value="true"/>-->
+            <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
             <!--<columnOverride column="DATE_FIELD" property="startDate" />-->
             <!--<ignoreColumn column="FRED" />-->
             <!--<columnOverride column="LONG_VARCHAR_FIELD" jdbcType="VARCHAR" />-->
