@@ -36,7 +36,12 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table schema="" tableName="category" domainObjectName="Category" >
+
+        <table schema="" tableName="category" domainObjectName="Category" mapperName="category.CategoryMapper"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false"
+        >
             <!--<property name="useActualColumnNames" value="true"/>-->
             <!--<generatedKey column="id" sqlStatement="MySql" identity="true" />-->
             <!--<columnOverride column="DATE_FIELD" property="startDate" />-->
