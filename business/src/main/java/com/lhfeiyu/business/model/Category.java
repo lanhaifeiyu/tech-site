@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @author:wangaimin
- * @date:2019/05/29 23:10
+ * @date:2019/05/29 23:24
  * @description:分类表
  */
 public class Category {

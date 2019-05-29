@@ -8,7 +8,6 @@
         <!--注释-->
         <commentGenerator type="com.lhfeiyu.generator.config.MySqlCommentGenerator">
             <property name="author" value="wangaimin"></property>
-            <property name="addRemarkComments" value="true"></property>
             <property name="dateFormat" value="yyyy/MM/dd HH:mm"></property>
         </commentGenerator>
 
@@ -16,7 +15,7 @@
                         userId="lh" password="Keep123!">
             <property name="nullCatalogMeansCurrent" value="true" />
             <!--注释中使用数据库中的备注-->
-            <property name="useInformationSchema" value="true"></property>
+            <!--<property name="useInformationSchema" value="true"></property>-->
          </jdbcConnection>
 
 
