@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class CategoryService {
     public String Find(long sysNo){
-        return "Hello Category "+sysNo;
+        return "Hello category "+sysNo;
     }
 }
