@@ -25,9 +25,11 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.lhfeiyu.business.model" targetProject="business\src\main\java">
+        <javaModelGenerator targetPackage="com.lhfeiyu.business.model" targetProject="business\src\main\java" >
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
+            <!--generator module 中能访问到rootClass生成的model才会不重写BaseModel中的属性-->
+            <property name="rootClass" value="com.lhfeiyu.business.model.Base.BaseModel"/>
         </javaModelGenerator>
 
         <sqlMapGenerator targetPackage="com.lhfeiyu.business.mappers"  targetProject="business\src\main\resources">
